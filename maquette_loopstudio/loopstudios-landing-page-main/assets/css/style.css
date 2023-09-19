@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Alata";
+  src: url(../font/Alata-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alata";
+}
+
+img,
+input {
+  width: 100%;
+}
+
+section {
+  padding: 1rem;
+}
+
+/*Header*/
+
+#check:checked ~ ul {
+  display: flex;
+}
+
+header {
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  color: rgb(2, 1, 1);
+  position: absolute;
+  display: flex;
+
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+nav li {
+  list-style-type: none;
+  display: none;
+}
+#burger {
+  display: none;
+}
+
+h1 {
+  border-style: solid;
+  padding: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#leader {
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  border-style: solid;
+  padding: 1rem;
+}
+
+h4 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  padding: 1rem;
+}
+
+footer li {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  list-style-type: none;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.384);
+}
+
+#creation div {
+  position: relative;
+  color: white;
+}
+
+h5 {
+  position: absolute;
+  top: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width : 576px) {
+    section{
+        padding: 5rem;
+    }
+
+    header {
+        background-image: url(../images/desktop/image-hero.jpg);
+    }
+
+    
+}
